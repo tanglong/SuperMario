@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="410" height="25" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="blocks" tilewidth="32" tileheight="32">
+  <image source="blocks.png" trans="4040ff" width="384" height="512"/>
+ </tileset>
+ <tileset firstgid="193" name="bonus" tilewidth="32" tileheight="32">
+  <image source="bonus.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <tileset firstgid="201" name="destination" tilewidth="32" tileheight="32">
+  <image source="destination.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <layer name="land" width="410" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt2kFuwyAQQFFvc8lcqVWatotW3fcAvV+NKiREgQxmDIP9n4QcRYqFgcwAZlkAAAAAAAAAAAAAAAAAAAAAALDpay0va7lH17eRlQIqMIaBObwvf//L61pua3kdWx2gmuUxHOZC8h8AQIvLd/E6y199Ie8AALYo5ZhUziHf2OfXpXHfxZ/py3PJ7d3fM98xTvop9Y30arWffI6RPAO5Zm5uv9b6eOzlMroClfaqbzgmcldL+/pST2t5nrQOkj6Zra9q1jK569lj1lH58V4z77U2v8rNEaXf9a5/7ZzW1S8XzyzEWm2S9nFt8rGWzw3312yzrXWISfPO6P9aic8zLXnQt0PpOa8N9z+7cA9s9N5XOObjYnUu5eTqHZ7H2fosrbHpttTlFmlM1YpzFrW02R75KWWv9s/lHUkc0Mijtfdw8UszPpRikOVca8ER18pnsSWeaOzFzz7HbZFba6dyh9tz9HOJnu8/euV51xbS/taok/Qert011jHo5yjvVo64l9Py3w1jRE3ukMbNmceKRGp+prE3U3u/LTlsj9hbmq9qrddSz8o8GJa0jHPJGmBEbD3y/lRKKZZJYkrNWmQ2Vs9VXBJ180XazuG7/PC34b4zOQUWtMTk1JmV8POo/++jZ5rtbJuExjoidw+/z4U+avbsySNtWt6P7LnHezRaeSaeR/Vq00e5rvTdmfsdwH+P8g75X07jfHT4m1Tp2c7xeZfcmbURdQMA1J+NnvUsNQAAAAAAQMm3wQIAOI4fg+UXCW/gUA==
+  </data>
+ </layer>
+ <layer name="pipein" width="410" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6AHsX9OY9w5SEACAAAAAAAAAAAAAAAAAAAAXDPtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPLYjbQAd
+  </data>
+ </layer>
+ <layer name="pass" width="410" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6D3b2YrY9w5SEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAR9MOAAAAHLX7bgDK
+  </data>
+ </layer>
+ <layer name="bonus" width="410" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt18kJADAIBED77yqdhVQQ8okHMxWIIO5GAAAAAAAAAAAAAAAAAAAAQH0rewAAAAD44KX/du/K3ecHAIDjlmvlXpjPnQNQgX8Es7nxPHYPAAAAAAAAAAAAAAAAMN8GX1YHiw==
+  </data>
+ </layer>
+ <objectgroup name="sprites" width="410" height="25">
+  <object name="destination" x="12352" y="704" width="32" height="32">
+   <properties>
+    <property name="castle" value="1"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+  <object name="rocket" type="wall" x="672" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object name="rocket" type="wall" x="416" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object name="born" x="160" y="576" width="32" height="32">
+   <properties>
+    <property name="back" value="f"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="576" y="560" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="976" y="560" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="1504" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="1408" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="2016" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="1824" y="352" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="1264" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="1616" y="400" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="2096" y="304" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="2480" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="2864" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="2560" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="2912" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="2816" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="3680" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="3520" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="3648" y="608" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="3056" y="528" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="3840" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="2992" y="592" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="3312" y="592" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="3760" y="496" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flower" type="wall" x="3008" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="4224" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4128" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="3936" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="4016" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="4368" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="4448" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="4320" y="224" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="4432" y="176" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="4512" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="4320" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badturt" type="enemy" x="4256" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="4448" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="4768" y="640" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4992" y="576" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4704" y="576" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="4816" y="560" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="4752" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="4992" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="5152" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="5344" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="5728" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="5472" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="5536" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="5664" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="5776" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="5968" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="5200" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="5872" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="5584" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="6352" y="304" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badturt" type="enemy" x="6400" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="6464" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="6336" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="6528" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="6112" y="352" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="6800" y="496" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="6880" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badturt" type="enemy" x="6816" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="7456" y="576" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="7424" y="576" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="7360" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="7488" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="7248" y="496" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="8064" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="8096" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="7648" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="8672" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="7728" y="368" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="8624" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="8208" y="400" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="7936" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="8096" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badturt" type="enemy" x="8384" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="8512" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="8432" y="432" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="7984" y="400" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="8912" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="9232" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="8992" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="9152" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="9408" y="352" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="9984" y="224" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="11136" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="firegun" type="enemy" x="11296" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="10224" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="10768" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="10176" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="10368" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hamturt" type="enemy" x="10624" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="9792" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="gunturt" type="enemy" x="9664" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="10080" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="10144" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="10496" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="hedgehog" type="enemy" x="11040" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badturt" type="enemy" x="10944" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11392" y="224" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11520" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11712" y="352" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11936" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11872" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11616" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="badmush" type="enemy" x="11776" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="10144" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="11072" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cannon" type="enemy" x="11200" y="288" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="10112" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="10880" y="544" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="12000" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="9520" y="304" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="9904" y="304" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="10128" y="176" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="10032" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="10544" y="528" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="10896" y="464" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="11344" y="208" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flight" type="enemy" x="11888" y="400" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flower" type="wall" x="4800" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object name="flower" type="wall" x="9088" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="3"/>
+   </properties>
+  </object>
+  <object name="fireflower" type="enemy" x="9040" y="400" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

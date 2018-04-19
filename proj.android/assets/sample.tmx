@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="260" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="blocks" tilewidth="32" tileheight="32">
+  <image source="blocks.png" trans="4040ff" width="384" height="224"/>
+ </tileset>
+ <tileset firstgid="85" name="bonus" tilewidth="32" tileheight="32">
+  <image source="bonus.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <tileset firstgid="93" name="destination" tilewidth="32" tileheight="32">
+  <image source="destination.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <layer name="land" width="260" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt08EJACAQA8HoX/sv1xqCcK8Z2BI2AQAAAAAAAAAAAAAAAJixi4B5K92nP90iYN5J9+lPD4jEAl8=
+  </data>
+ </layer>
+ <layer name="pipein" width="260" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztwSEBAAAAAiCH+H+nMyxAAwAAAAAAAAAAAAAAAAAA8DHnigAd
+  </data>
+ </layer>
+ <layer name="pass" width="260" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIwKAVtX8NY3gICSgAAAAAAAAAAAAAAACAmusAAPDSAlURAF4=
+  </data>
+ </layer>
+ <layer name="bonus" width="260" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAA+BjzwAAE=
+  </data>
+ </layer>
+ <objectgroup name="sprites" width="260" height="15">
+  <object name="destination" x="7520" y="384" width="32" height="32">
+   <properties>
+    <property name="castle" value="1"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+  <object name="born" x="96" y="384" width="32" height="32">
+   <properties>
+    <property name="back" value="3"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

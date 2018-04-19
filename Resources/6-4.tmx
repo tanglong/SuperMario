@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="260" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="blocks" tilewidth="32" tileheight="32">
+  <image source="blocks.png" trans="4040ff" width="384" height="512"/>
+ </tileset>
+ <tileset firstgid="193" name="bonus" tilewidth="32" tileheight="32">
+  <image source="bonus.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <tileset firstgid="201" name="destination" tilewidth="32" tileheight="32">
+  <image source="destination.png" trans="4040ff" width="256" height="32"/>
+ </tileset>
+ <layer name="land" width="260" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztXMFu2zAMfdfc+jHLzuzO625rjGVL0i1ri35K+9OzYAvRBDmxTFmibD7gwWlqszRpPtGy1XsA9wx+Qd0g8M4/ZdxK+VLiXBXT8Ltn43zm2PFtrD3XBDk1UsoX1YN6YHTgV8t9v22Ydnwba881QU6NlPJF9aAeGB1ovC3Hjm9j7bkmyKmRUr6oHtSDfYAp7FisPdcEOTVSyhfVg3pg6/cM1YM5QJBTI6V8UT2oB0YHXtHd97/2P3Ps+DbWnmuCnBr52vJhgfx2LQGKKDy1fGl5aPm35R+GnUNP18bac02QowebCL/vHMbuH3Pc0LGxNhTyYOcTFRcQ5OhBLGL0w4BTx6oFijWAUK8eTEGshrjIoQXX/OP4riiLWnJHWJcecHErr9y8f2r5OeJ7RVpsHaaKd005LTWHJ3HehVvLMf3D0LVg8hGKzdD3Eq+pmuGOWe9IE9vYnFpwe9kNeL3slL8/tb+du3/KObfgHz/Gzq1rYSysnVvna3RjO4FL1BqTmxO654zn/rPNl9/HptKEEIZy5uZqifHnYIpu5Hz2MHT8GDs57ykJ897XTdWbXBrl19ibR/v7UAzm1IQQCOPjH9sHpOgbSiHVs8HY/blaIvE5BGFePZhqfw6fvqN7R+GE7h2FHf6/Lzb91BGXtY3HEf4bTcjVT7m+1DrPlgI5x5iclNDzEZalB/Z9pMcAf7T86bDx9n9G1xMc+u0uof/c+t2gDj0Y29tyemBCvmsqJyXklLAcPbg2VhvttWsWXfr3C+7/T2gS+h+KV+w49xE411xjSqkxOXR+hPK1q3ogXw9u+euud7JbCuzjrndO5f9c63JyXUMpfJUUN4lUPcgba1PfZtw/99shPXCZyn/VA1lxk0jVg7yxtjpgecZ4PfgHSdgLwg==
+  </data>
+ </layer>
+ <layer name="pipein" width="260" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIA6AFsX9OK+zzEBKQAAAAAAB05joAAAAAAAAAAAAAAAAAAAC8tfvaAB0=
+  </data>
+ </layer>
+ <layer name="pass" width="260" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzgEJAAAMA6D1j/ZUjzEGmsAEAAAAAAAAAAAAAAAAWHLtAAAAAAAAAEDBA1dRAMs=
+  </data>
+ </layer>
+ <layer name="bonus" width="260" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENADAIA0H23yqbpfIASIkouJsAF3wVAAAAAAAAANB1pg8YsmH3ho3wgl8BQg+A0AMg9AAAAAAAAAAA+OUCkOkFSA==
+  </data>
+ </layer>
+ <objectgroup name="sprites" width="260" height="20">
+  <object name="destination" x="7520" y="384" width="32" height="32">
+   <properties>
+    <property name="bname" value="brain"/>
+    <property name="castle" value="2"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="7616" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="7616" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="8160" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="8192" y="192" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="cp" type="cp1" x="6816" y="384" width="32" height="32">
+   <properties>
+    <property name="cpid" value="1"/>
+    <property name="created" value="0"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="704" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="864" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="1024" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="1120" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="1440" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="1824" y="448" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs2" type="enemy" x="1632" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flower" type="wall" x="1632" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="2144" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="2368" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="2560" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="2688" y="512" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="2784" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3008" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3168" y="224" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="riseball" type="enemy" x="576" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="riseball" type="enemy" x="1536" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="riseball" type="enemy" x="1344" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="riseball" type="enemy" x="1920" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3328" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3552" y="256" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3776" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="3968" y="288" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4192" y="352" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4480" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="4736" y="320" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="5088" y="416" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="5248" y="288" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="5472" y="288" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireballs" type="enemy" x="5696" y="384" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="flower" type="wall" x="6144" y="224" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+    <property name="id" value="1"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="8160" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="fireround" type="enemy" x="8000" y="480" width="32" height="32">
+   <properties>
+    <property name="created" value="0"/>
+   </properties>
+  </object>
+  <object name="born" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="back" value="a"/>
+    <property name="mapy" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
